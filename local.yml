@@ -110,3 +110,8 @@
     - name: install docker and docker-compose
       become: true
       script: install_docker.sh
+
+    - name: install meld as mergeconflict tool
+      become: true
+      dnf:
+        name: meld
