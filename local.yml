@@ -120,3 +120,7 @@
       become: true
       dnf:
         name: 'https://github.com/ramboxapp/community-edition/releases/download/0.6.9/Rambox-0.6.9-linux-x86_64.rpm'
+
+    - name: install teamviewer
+      become: true
+      script: install_teamviewer.sh
