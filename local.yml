@@ -136,3 +136,7 @@
     - name: install dropbox
       become: true
       script: install_dropbox.sh
+
+    - name: install microsoft r open
+      become: true
+      script: install_mro.sh
