@@ -97,3 +97,8 @@
     - name: install google-chrome repository
       become: true
       script: install_google_chrome.sh
+
+    - name: install dbeaver database client
+      become: true
+      dnf:
+        name: 'https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm'
