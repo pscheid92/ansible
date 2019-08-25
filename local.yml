@@ -74,19 +74,15 @@
       dnf:
         name: calibre
     
-    - name: install graphic software
+    - name: install graphic and office software
       become: true
       dnf:
         name:
           - gimp
           - inkscape
-
-    - name: install printing and scanning
-      become: true
-      dnf:
-        name:
           - hplip
           - hplip-gui
+          - pdfmod
           - xsane
 
     - name: install gnome tweak tool
