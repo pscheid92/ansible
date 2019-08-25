@@ -124,3 +124,8 @@
     - name: install teamviewer
       become: true
       script: install_teamviewer.sh
+
+    - name: install spotify
+      flatpak:
+        name: com.spotify.Client
+        state: present
