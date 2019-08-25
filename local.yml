@@ -115,3 +115,7 @@
       become: true
       dnf:
         name: meld
+
+    - name: install insync
+      become: true
+      script: install_insync.sh
