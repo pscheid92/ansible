@@ -145,3 +145,8 @@
       become: true
       dnf:
         name: 'https://download1.rstudio.org/desktop/centos7/x86_64/rstudio-1.2.1335-x86_64.rpm'
+
+    - name: install leela gui
+      become: true
+      dnf:
+        name: 'https://sjeng.org/dl/leela-0.11.0-1.x86_64.rpm'
