@@ -140,3 +140,8 @@
     - name: install microsoft r open
       become: true
       script: install_mro.sh
+
+    - name: install rstudio
+      become: true
+      dnf:
+        name: 'https://download1.rstudio.org/desktop/centos7/x86_64/rstudio-1.2.1335-x86_64.rpm'
