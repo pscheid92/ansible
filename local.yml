@@ -68,16 +68,12 @@
     
     - name: install jetbrains toolbox
       script: install_jetbrains_toolbox.sh
-
-    - name: install calibre
-      become: true
-      dnf:
-        name: calibre
     
     - name: install graphic and office software
       become: true
       dnf:
         name:
+          - calibre
           - gimp
           - inkscape
           - hplip
