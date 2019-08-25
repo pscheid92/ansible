@@ -106,3 +106,7 @@
     - name: install visual Studio code
       become: true
       script: install_visual_studio_code.sh
+
+    - name: install docker and docker-compose
+      become: true
+      script: install_docker.sh
