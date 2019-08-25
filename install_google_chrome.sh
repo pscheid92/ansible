@@ -1,6 +1,6 @@
 # Create the repository in etc
 
-cat << EOF > /etc/yum.repos.d/google-chrome.repo
+cat << 'EOF' > /etc/yum.repos.d/google-chrome.repo
 [google-chrome]
 name=google-chrome
 baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64

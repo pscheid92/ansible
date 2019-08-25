@@ -2,7 +2,7 @@
 rpm --import https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
 
 # Create repo file
-cat << EOF > /etc/yum.repos.d/insync.repo
+cat << 'EOF' > /etc/yum.repos.d/insync.repo
 [insync]
 name=insync repo
 baseurl=http://yum.insync.io/[DISTRIBUTION]/$releasever/
