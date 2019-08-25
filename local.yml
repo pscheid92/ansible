@@ -129,3 +129,8 @@
       flatpak:
         name: com.spotify.Client
         state: present
+
+    - name: install vlc player
+      flatpak:
+        name: org.videolan.VLC
+        state: present
