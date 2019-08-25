@@ -134,3 +134,7 @@
       flatpak:
         name: org.videolan.VLC
         state: present
+
+    - name: install dropbox
+      become: true
+      script: install_dropbox.sh
