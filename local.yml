@@ -84,6 +84,8 @@
           - hplip-gui
           - pdfmod
           - xsane
+          - paperwork
+          - tesseract-langpack-deu
 
     - name: install gnome tweak tool
       become: true
