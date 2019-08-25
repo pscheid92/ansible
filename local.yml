@@ -93,3 +93,7 @@
       become: true
       dnf:
         name: gnome-tweaks
+
+    - name: install google-chrome repository
+      become: true
+      script: install_google_chrome.sh
