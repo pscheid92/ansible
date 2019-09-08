@@ -9,8 +9,8 @@ $ASDF plugin-add gradle || true
 $ASDF plugin-add golang || true
 
 # Golang
-$ASDF install golang 1.12.7
-$ASDF global golang 1.12.7
+$ASDF install golang 1.13
+$ASDF global golang 1.13
 
 # Gradle
 $ASDF install gradle 5.6
