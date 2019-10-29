@@ -3,7 +3,7 @@
    become_method: sudo
    remote_user: pscheid
 
-   tasks:    
+   tasks:
     - name: update all packages
       become: true
       dnf:
@@ -26,7 +26,7 @@
         dest: /home/pscheid/.oh-my-zsh
         accept_hostkey: yes
         key_file: /home/pscheid/.ssh/id_rsa
-    
+
     - name: clone my private dotfiles
       git:
         repo: git@github.com:pscheid92/dotfiles.git
@@ -65,10 +65,10 @@
 
     - name: configure plugins and languages asdf
       script: configure_asdf.sh
-    
+
     - name: install jetbrains toolbox
       script: install_jetbrains_toolbox.sh
-    
+
     - name: install graphic and office software
       become: true
       dnf:
@@ -118,6 +118,13 @@
       become: true
       dnf:
         name: 'https://github.com/ramboxapp/community-edition/releases/download/0.6.9/Rambox-0.6.9-linux-x86_64.rpm'
+
+    - name: install podman
+      become: true
+      dnf:
+        name:
+          - podman
+          - podman-docker
 
     - name: install teamviewer
       become: true
