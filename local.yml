@@ -97,14 +97,6 @@
       dnf:
         name: 'https://dbeaver.io/files/dbeaver-ce-latest-stable.x86_64.rpm'
 
-    - name: install visual Studio code
-      become: true
-      script: install_visual_studio_code.sh
-
-    - name: install docker and docker-compose
-      become: true
-      script: install_docker.sh
-
     - name: install meld as mergeconflict tool
       become: true
       dnf:
@@ -118,6 +110,11 @@
       become: true
       dnf:
         name: 'https://github.com/ramboxapp/community-edition/releases/download/0.6.9/Rambox-0.6.9-linux-x86_64.rpm'
+
+    - name: install atom editor
+      become: true
+      dnf:
+        name: 'https://atom.io/download/rpm'
 
     - name: install podman
       become: true
@@ -151,7 +148,7 @@
     - name: install rstudio
       become: true
       dnf:
-        name: 'https://download1.rstudio.org/desktop/centos7/x86_64/rstudio-1.2.1335-x86_64.rpm'
+        name: 'https://download1.rstudio.org/desktop/fedora28/x86_64/rstudio-1.2.5001-x86_64.rpm'
 
     - name: install leela gui
       become: true

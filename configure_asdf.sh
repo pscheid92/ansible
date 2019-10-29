@@ -1,24 +1,33 @@
-# Install and configure asdf 
-
+# Install and configure asdf
 ASDF=/home/pscheid/.asdf/bin/asdf
 
-# Install plugins
-echo "$ASDF"
-$ASDF plugin-add java || true
-$ASDF plugin-add gradle || true
-$ASDF plugin-add golang || true
-
 # Golang
-$ASDF install golang 1.13
-$ASDF global golang 1.13
+$ASDF plugin-add golang || true
+$ASDF install golang 1.13.3
+$ASDF global golang 1.13.3
 
 # Gradle
-$ASDF install gradle 5.6
-$ASDF global gradle 5.6
+$ASDF plugin-add gradle || true
+$ASDF install gradle 5.6.3
+$ASDF global gradle 5.6.3
 
-# Java 8
+# Java
+$ASDF plugin-add java || true
 $ASDF install java adoptopenjdk-8.212
-
-# Java 12
 $ASDF install java openjdk-12.0.1
 $ASDF global java openjdk-12.0.1
+
+# Leiningen
+$ASDF plugin-add lein https://github.com/miorimmax/asdf-lein.git || true
+$ASDF install lein 2.9.1
+$ASDF global lein 2.9.1
+
+# Micronaut
+$ASDF plugin-add micronaut || true
+$ASDF install micronaut 1.2.5
+$ASDF global micronaut 1.2.5
+
+# NodeJS
+$ASDF plugin-add nodejs || true
+$ASDF install nodejs 13.0.1
+$ASDF global nodejs 13.0.1
