@@ -123,6 +123,12 @@
           - podman
           - podman-docker
 
+    - name: install podman-compose
+      become: true
+      pip:
+        name: podman-compose
+        executable: pip3
+
     - name: install teamviewer
       become: true
       script: install_teamviewer.sh
