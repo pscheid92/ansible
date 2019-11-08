@@ -3,8 +3,8 @@ ASDF=/home/pscheid/.asdf/bin/asdf
 
 # Golang
 $ASDF plugin-add golang || true
-$ASDF install golang 1.13.3
-$ASDF global golang 1.13.3
+$ASDF install golang 1.13.4
+$ASDF global golang 1.13.4
 
 # Gradle
 $ASDF plugin-add gradle || true
