@@ -9,4 +9,5 @@ cd microsoft-r-open/rpm/rhel
 dnf install ./microsoft-r-open-mkl-3.5.3.rpm
 dnf install ./microsoft-r-open-mro-3.5.3.rpm
 
+cd $HOME
 rm -rf $TEMPDIR
