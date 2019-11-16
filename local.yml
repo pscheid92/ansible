@@ -116,12 +116,15 @@
       dnf:
         name: 'https://atom.io/download/rpm'
 
+    - name: install docker and docker-compose
+      become: true
+      script: install_docker.sh
+
     - name: install podman
       become: true
       dnf:
         name:
           - podman
-          - podman-docker
 
     - name: install podman-compose
       become: true
