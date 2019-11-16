@@ -168,3 +168,7 @@
     - name: install websocat
       become: true
       script: install_websocat.sh
+
+    - name: install wrk2
+      become: true
+      script: install_wrk2.sh
