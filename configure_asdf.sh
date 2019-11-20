@@ -29,5 +29,5 @@ $ASDF global micronaut 1.2.5
 
 # NodeJS
 $ASDF plugin-add nodejs || true
-$ASDF install nodejs 13.0.1
-$ASDF global nodejs 13.0.1
+$ASDF install nodejs 13.1.0
+$ASDF global nodejs 13.1.0
