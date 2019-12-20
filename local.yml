@@ -64,10 +64,10 @@
         version: v0.7.4
 
     - name: configure plugins and languages asdf
-      script: configure_asdf.sh
+      script: install_scripts/configure_asdf.sh
 
     - name: install jetbrains toolbox
-      script: install_jetbrains_toolbox.sh
+      script: install_scripts/install_jetbrains_toolbox.sh
 
     - name: install graphic and office software
       become: true
@@ -90,7 +90,7 @@
 
     - name: install google-chrome repository
       become: true
-      script: install_google_chrome.sh
+      script: install_scripts/install_google_chrome.sh
 
     - name: install dbeaver database client
       become: true
@@ -104,7 +104,7 @@
 
     - name: install insync
       become: true
-      script: install_insync.sh
+      script: install_scripts/install_insync.sh
 
     - name: install rambox
       become: true
@@ -118,7 +118,7 @@
 
     - name: install docker and docker-compose
       become: true
-      script: install_docker.sh
+      script: install_scripts/install_docker.sh
 
     - name: install podman
       become: true
@@ -134,7 +134,7 @@
 
     - name: install teamviewer
       become: true
-      script: install_teamviewer.sh
+      script: install_scripts/install_teamviewer.sh
 
     - name: install spotify
       flatpak:
@@ -148,11 +148,11 @@
 
     - name: install dropbox
       become: true
-      script: install_dropbox.sh
+      script: install_scripts/install_dropbox.sh
 
     - name: install microsoft r open
       become: true
-      script: install_mro.sh
+      script: install_scripts/install_mro.sh
 
     - name: install rstudio
       become: true
@@ -166,12 +166,12 @@
 
     - name: install k6
       become: true
-      script: install_k6.sh
+      script: install_scripts/install_k6.sh
 
     - name: install websocat
       become: true
-      script: install_websocat.sh
+      script: install_scripts/install_websocat.sh
 
     - name: install wrk2
       become: true
-      script: install_wrk2.sh
+      script: install_scripts/install_wrk2.sh
