@@ -120,7 +120,11 @@
       become: true
       script: install_scripts/install_docker.sh
 
-    - name: install kubectl and minikube
+    - name: install kubectl
+      become: true
+      script: install_scripts/install_kubectl.sh
+
+    - name: install minikube
       become: true
       script: install_scripts/install_minikube.sh
 
