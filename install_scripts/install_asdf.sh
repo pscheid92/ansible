@@ -8,8 +8,8 @@ $ASDF global golang 1.13.5
 
 # Gradle
 $ASDF plugin-add gradle || true
-$ASDF install gradle 5.6.3
-$ASDF global gradle 5.6.3
+$ASDF install gradle 6.0.1
+$ASDF global gradle 6.0.1
 
 # Java
 $ASDF plugin-add java || true
@@ -24,10 +24,15 @@ $ASDF global lein 2.9.1
 
 # Micronaut
 $ASDF plugin-add micronaut || true
-$ASDF install micronaut 1.2.5
-$ASDF global micronaut 1.2.5
+$ASDF install micronaut 1.2.8
+$ASDF global micronaut 1.2.8
 
 # NodeJS
 $ASDF plugin-add nodejs || true
-$ASDF install nodejs 13.1.0
-$ASDF global nodejs 13.1.0
+$ASDF install nodejs 13.5.0
+$ASDF global nodejs 13.5.0
+
+# SBT
+$ASDF plugin-add sbt || true
+$ASDF install sbt 1.3.5
+$ASDF global sbt 1.3.5
