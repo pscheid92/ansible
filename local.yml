@@ -120,6 +120,10 @@
       become: true
       script: install_scripts/install_docker.sh
 
+    - name: install kubectl and minikube
+      become: true
+      script: install_scripts/install_minikube.sh
+
     - name: install podman
       become: true
       dnf:
