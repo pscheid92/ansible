@@ -13,4 +13,4 @@ metadata_expire=120m
 EOF
 
 # Install insync
-dnf install insync insync-nautilus
+dnf install -y insync insync-nautilus
