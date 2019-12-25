@@ -10,4 +10,4 @@ gpgkey=https://dl.google.com/linux/linux_signing_key.pub
 EOF
 
 # Install with dnf
-dnf install google-chrome-stable
+dnf install -y google-chrome-stable

@@ -14,4 +14,4 @@ failovermethod=priority
 EOF
 
 # Install it
-dnf install teamviewer
+dnf install -y teamviewer

@@ -10,4 +10,4 @@ gpgkey=https://linux.dropbox.com/fedora/rpm-public-key.asc
 EOF
 
 # Install
-dnf install dropbox nautilus-dropbox
+dnf install -y dropbox nautilus-dropbox
