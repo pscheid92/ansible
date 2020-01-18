@@ -8,8 +8,8 @@ $ASDF global golang 1.13.6
 
 # Gradle
 $ASDF plugin-add gradle || true
-$ASDF install gradle 6.0.1
-$ASDF global gradle 6.0.1
+$ASDF install gradle 6.1
+$ASDF global gradle 6.1
 
 # Java
 $ASDF plugin-add java || true
