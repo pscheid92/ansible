@@ -1,6 +1,9 @@
 # Install and configure asdf
 ASDF=/home/pscheid/.asdf/bin/asdf
 
+# Update all plugins
+$ASDF plugin update --all
+
 # Golang
 $ASDF plugin-add golang || true
 $ASDF install golang 1.13.6
