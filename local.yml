@@ -182,3 +182,23 @@
     - name: install wrk2
       become: true
       script: install_scripts/install_wrk2.sh
+
+    - name: install localstack
+      become: true
+      pip:
+        name: localstack[full]
+        executable: pip3
+
+    - name: install awslocal cli
+      become: true
+      pip:
+        name: awscli-local
+        executable: pip3
+
+    - name: install aws cli
+      become: true
+      script: install_scripts/install_awscli.sh
+
+    - name: install terraform
+      become: true
+      script: install_scripts/install_terraform.sh
