@@ -13,9 +13,9 @@ $ASDF global gradle 6.1
 
 # Java
 $ASDF plugin-add java || true
-$ASDF install java zulu-8.0.212
-$ASDF install java zulu-12.0.1
-$ASDF global java zulu-12.0.1
+$ASDF install java azul-zulu-8.42.0.23-jdk8.0.232
+$ASDF install java azul-zulu-13.28.11-jdk13.0.1
+$ASDF global java azul-zulu-13.28.11-jdk13.0.1
 
 # Leiningen
 $ASDF plugin-add lein https://github.com/miorimmax/asdf-lein.git || true
