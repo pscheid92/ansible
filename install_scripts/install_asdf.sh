@@ -25,6 +25,11 @@ $ASDF plugin add lein https://github.com/miorimmax/asdf-lein.git || true
 $ASDF install lein 2.9.1
 $ASDF global lein 2.9.1
 
+# Clojure
+$ASDF plugin add clojure
+$ASDF install clojure 1.10.1
+$ASDF global clojure 1.10.1
+
 # Micronaut
 $ASDF plugin add micronaut || true
 $ASDF install micronaut 1.2.9
