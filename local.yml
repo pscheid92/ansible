@@ -65,6 +65,12 @@
     - name: configure plugins and languages asdf
       script: install_scripts/install_asdf.sh
 
+    - name: install rlwrap as dependency for clojure
+      become: true
+      dnf:
+        name:
+          - rlwrap
+
     - name: install jetbrains toolbox
       script: install_scripts/install_jetbrains_toolbox.sh
 
