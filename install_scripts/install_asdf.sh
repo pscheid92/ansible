@@ -37,8 +37,8 @@ $ASDF global clojure 1.10.1
 
 # Micronaut
 $ASDF plugin add micronaut || true
-$ASDF install micronaut 1.2.9
-$ASDF global micronaut 1.2.9
+$ASDF install micronaut 1.3.0
+$ASDF global micronaut 1.3.0
 
 # NodeJS
 $ASDF plugin add nodejs || true
