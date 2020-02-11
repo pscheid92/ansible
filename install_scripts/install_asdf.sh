@@ -14,6 +14,11 @@ $ASDF plugin add gradle || true
 $ASDF install gradle 6.1.1
 $ASDF global gradle 6.1.1
 
+# Maven
+$ASDF plugin add maven || true
+$ASDF install maven 3.6.3
+$ASDF global maven 3.6.3
+
 # Java
 $ASDF plugin add java || true
 $ASDF install java azul-zulu-8.42.0.23-jdk8.0.232
