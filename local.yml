@@ -116,10 +116,9 @@
       dnf:
         name: 'https://github.com/ramboxapp/community-edition/releases/download/0.7.3/Rambox-0.7.3-linux-x86_64.rpm'
 
-    - name: install atom editor
+    - name: install visual studio code
       become: true
-      dnf:
-        name: 'https://atom.io/download/rpm'
+      script: install_scripts/install_visual_studio_code.sh
 
     - name: install docker and docker-compose
       become: true
