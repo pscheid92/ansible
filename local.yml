@@ -207,3 +207,7 @@
     - name: install terraform
       become: true
       script: install_scripts/install_terraform.sh
+
+    - name: install angular cli
+      become: false
+      script: install_scripts/install_angular_cli.sh
