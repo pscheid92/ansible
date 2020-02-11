@@ -45,3 +45,8 @@ $ASDF plugin add nodejs || true
 $ASDF install nodejs 13.8.0
 $ASDF global nodejs 13.8.0
 
+# Groovy
+$ASDF plugin add groovy
+$ASDF install groovy apache-groovy-binary-3.0.0
+$ASDF global groovy apache-groovy-binary-3.0.0 
+
