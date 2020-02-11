@@ -45,7 +45,3 @@ $ASDF plugin add nodejs || true
 $ASDF install nodejs 13.8.0
 $ASDF global nodejs 13.8.0
 
-# SBT
-$ASDF plugin add sbt || true
-$ASDF install sbt 1.3.7
-$ASDF global sbt 1.3.7
