@@ -184,10 +184,6 @@
       become: true
       script: install_scripts/install_websocat.sh
 
-    - name: install wrk2
-      become: true
-      script: install_scripts/install_wrk2.sh
-
     - name: install localstack
       become: true
       pip:
