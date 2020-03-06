@@ -6,7 +6,7 @@ trap "rm -rf $TEMPDIR" EXIT
 cd $TEMPDIR
 
 # Configuration
-VERSION="0.12.19"
+VERSION="0.12.23"
 URL="https://releases.hashicorp.com/terraform/${VERSION}/terraform_${VERSION}_linux_amd64.zip"
 TARGET="/usr/local/bin/terraform"
 
