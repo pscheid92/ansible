@@ -137,12 +137,7 @@
       dnf:
         name:
           - podman
-
-    - name: install podman-compose
-      become: true
-      pip:
-        name: podman-compose
-        executable: pip3
+          - podman-compose
 
     - name: install teamviewer
       become: true
