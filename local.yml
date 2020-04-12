@@ -92,6 +92,11 @@
       become: true
       dnf:
         name: gnome-tweaks
+    
+    - name: install R
+      become: true
+      dnf:
+        name: R
 
     - name: install google-chrome repository
       become: true
@@ -114,7 +119,7 @@
     - name: install rambox
       become: true
       dnf:
-        name: 'https://github.com/ramboxapp/community-edition/releases/download/0.7.4/Rambox-0.7.4-linux-x86_64.rpm'
+        name: 'https://github.com/ramboxapp/community-edition/releases/download/0.7.5/Rambox-0.7.5-linux-x86_64.rpm'
 
     - name: install visual studio code
       become: true
@@ -156,10 +161,6 @@
     - name: install dropbox
       become: true
       script: install_scripts/install_dropbox.sh
-
-    - name: install microsoft r open
-      become: true
-      script: install_scripts/install_mro.sh
 
     - name: install rstudio
       become: true
