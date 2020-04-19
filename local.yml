@@ -129,14 +129,6 @@
       become: true
       script: install_scripts/install_docker.sh
 
-    - name: install kubectl
-      become: true
-      script: install_scripts/install_kubectl.sh
-
-    - name: install minikube
-      become: true
-      script: install_scripts/install_minikube.sh
-
     - name: install podman
       become: true
       dnf:
@@ -172,10 +164,6 @@
       dnf:
         name: 'https://sjeng.org/dl/leela-0.11.0-1.x86_64.rpm'
 
-    - name: install k6
-      become: true
-      script: install_scripts/install_k6.sh
-
     - name: install websocat
       become: true
       script: install_scripts/install_websocat.sh
@@ -196,10 +184,8 @@
       become: true
       script: install_scripts/install_awscli.sh
 
-    - name: install terraform
-      become: true
-      script: install_scripts/install_terraform.sh
-
     - name: install angular cli
-      become: false
-      script: install_scripts/install_angular_cli.sh
+      become: true
+      npm:
+        name: '@angular/cli'
+        global: true
