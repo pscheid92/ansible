@@ -29,6 +29,7 @@ asdf_install "terraform" "0.12.24"
 asdf_install "kubectl" "1.18.2"
 asdf_install "minikube" "1.9.2"
 asdf_install "helm" "3.1.2"
+asdf_install "haskell" "8.10.1"
 
 
 # Leiningen (needs extra installation)
