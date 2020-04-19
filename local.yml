@@ -29,7 +29,7 @@
 
     - name: clone my private dotfiles
       git:
-        repo: git@github.com:pscheid92/dotfiles.git
+        repo: git@gitlab.com:pscheid92/dotfiles.git
         dest: /home/pscheid/.dotfiles
         accept_hostkey: yes
         key_file: /home/pscheid/.ssh/id_rsa
