@@ -20,6 +20,12 @@
           - moreutils
           - pixz
 
+    - name: install hyper terminal
+      become: true
+      dnf:
+        name:
+          - "https://releases.hyper.is/download/rpm" 
+
     - name: clone oh-my-zsh
       git:
         repo: git@github.com:robbyrussell/oh-my-zsh.git
