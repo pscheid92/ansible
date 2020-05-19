@@ -65,6 +65,10 @@
     - name: configure plugins and languages asdf
       script: install_scripts/install_asdf.sh
 
+    - name: install tfswitch
+      become: true
+      script: install_scripts/install_tfswitch.sh
+
     - name: install rlwrap as dependency for clojure
       become: true
       dnf:
