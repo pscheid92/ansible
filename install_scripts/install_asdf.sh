@@ -29,6 +29,7 @@ asdf_install "kubectl" "1.18.6"
 asdf_install "minikube" "1.12.1"
 asdf_install "helm" "3.2.4"
 asdf_install "haskell" "8.10.1"
+asdf_install "yq" "3.4.1"
 
 
 # Leiningen (needs extra installation)
