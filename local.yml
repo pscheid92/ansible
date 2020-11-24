@@ -25,14 +25,14 @@
         repo: git@github.com:robbyrussell/oh-my-zsh.git
         dest: /home/pscheid/.oh-my-zsh
         accept_hostkey: yes
-        key_file: /home/pscheid/.ssh/id_rsa
+        key_file: /home/pscheid/.ssh/id_ed25519
 
     - name: clone my private dotfiles
       git:
         repo: git@gitlab.com:pscheid92/dotfiles.git
         dest: /home/pscheid/.dotfiles
         accept_hostkey: yes
-        key_file: /home/pscheid/.ssh/id_rsa
+        key_file: /home/pscheid/.ssh/id_ed25519
 
     - name: link dotfile configuration files
       script: /home/pscheid/.dotfiles/install
