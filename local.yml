@@ -164,3 +164,6 @@
       npm:
         name: '@angular/cli'
         global: true
+
+    - name: install yq
+      script: install_script/install_yq.sh
