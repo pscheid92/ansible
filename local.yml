@@ -20,6 +20,7 @@
           - moreutils
           - brotli
           - util-linux-user
+          - httpie
 
     - name: clone oh-my-zsh
       git:
