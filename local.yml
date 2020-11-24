@@ -21,6 +21,7 @@
           - brotli
           - util-linux-user
           - httpie
+          - jq
 
     - name: clone oh-my-zsh
       git:
