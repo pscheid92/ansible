@@ -19,6 +19,7 @@
           - tilix-nautilus
           - moreutils
           - pixz
+          - util-linux-user
 
     - name: clone oh-my-zsh
       git:
