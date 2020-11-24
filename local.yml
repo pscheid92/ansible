@@ -134,13 +134,6 @@
       become: true
       script: install_scripts/install_docker.sh
 
-    - name: install podman
-      become: true
-      dnf:
-        name:
-          - podman
-          - podman-compose
-
     - name: install teamviewer
       become: true
       script: install_scripts/install_teamviewer.sh
