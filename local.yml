@@ -67,10 +67,6 @@
     - name: configure plugins and languages asdf
       script: install_scripts/install_asdf.sh
 
-    - name: install tfswitch
-      become: true
-      script: install_scripts/install_tfswitch.sh
-
     - name: install rlwrap as dependency for clojure
       become: true
       dnf:
@@ -161,22 +157,6 @@
     - name: install websocat
       become: true
       script: install_scripts/install_websocat.sh
-
-    - name: install localstack
-      become: true
-      pip:
-        name: localstack[full]
-        executable: pip3
-
-    - name: install awslocal cli
-      become: true
-      pip:
-        name: awscli-local
-        executable: pip3
-
-    - name: install aws cli
-      become: true
-      script: install_scripts/install_awscli.sh
 
     - name: install angular cli
       become: true
