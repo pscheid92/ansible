@@ -7,7 +7,7 @@ fi
 
 # Download extract and start
 TMPDIR=`mktemp -d`
-curl -o toolbox.tar.gz "https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.18.7609.tar.gz"
+curl -o toolbox.tar.gz "https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.20.8352.tar.gz"
 tar -zxf toolbox.tar.gz
-./jetbrains-toolbox-1.18.7609/jetbrains-toolbox
+./jetbrains-toolbox-1.20.8352/jetbrains-toolbox
 rm -rf $TMPDIR
